@@ -11,5 +11,11 @@ jobs:
     steps:
       - name: Echo the message
         run: echo "Hello world"
+
+      - name: Get Date  
+        run: date
+      
+      - name: Get list
+        run: ls -l
       # run: |
       #   echo "Hello world"
