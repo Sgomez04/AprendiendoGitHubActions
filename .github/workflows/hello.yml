@@ -7,15 +7,11 @@ on:
 
 jobs:
   hello_world:
-    runs-on: ubuntu-latest
+    runs-on: ubuntu-18.04
     steps:
       - name: Echo the message
-        run: echo "Hello world"
-
-      - name: Get Date  
+        run: |
+          echo "Hola midu!"
+      - name: Dime la fecha
         run: date
-      
-      - name: Get list
-        run: ls -l
-      # run: |
-      #   echo "Hello world"
+      - run: ls -l
